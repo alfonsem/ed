@@ -1,0 +1,232 @@
+run:
+Test 1:
+Tiempo demorado para ArrayList:	 0,02099400 Milisegundos
+Tiempo demorado para LinkedList:	 0,03685600 Milisegundos
+Test 2:
+Tiempo demorado para ArrayList:	 0,00699800 Milisegundos
+Tiempo demorado para LinkedList:	 0,02239300 Milisegundos
+Test 3:
+Tiempo demorado para ArrayList:	 0,00793100 Milisegundos
+Tiempo demorado para LinkedList:	 0,01492900 Milisegundos
+Test 4:
+Tiempo demorado para ArrayList:	 0,02239400 Milisegundos
+Tiempo demorado para LinkedList:	 0,01819400 Milisegundos
+Test 5:
+Tiempo demorado para ArrayList:	 0,01213000 Milisegundos
+Tiempo demorado para LinkedList:	 0,00373200 Milisegundos
+Test 6:
+Tiempo demorado para ArrayList:	 0,00419900 Milisegundos
+Tiempo demorado para LinkedList:	 0,01353000 Milisegundos
+Test 7:
+Tiempo demorado para ArrayList:	 0,00326600 Milisegundos
+Tiempo demorado para LinkedList:	 0,00326600 Milisegundos
+Test 8:
+Tiempo demorado para ArrayList:	 0,02426000 Milisegundos
+Tiempo demorado para LinkedList:	 0,00326600 Milisegundos
+Test 9:
+Tiempo demorado para ArrayList:	 0,02099400 Milisegundos
+Tiempo demorado para LinkedList:	 0,04618700 Milisegundos
+Test 10:
+Tiempo demorado para ArrayList:	 0,07651100 Milisegundos
+Tiempo demorado para LinkedList:	 0,05411800 Milisegundos
+Test 11:
+Tiempo demorado para ArrayList:	 0,05038500 Milisegundos
+Tiempo demorado para LinkedList:	 0,03545600 Milisegundos
+Test 12:
+Tiempo demorado para ArrayList:	 0,01632900 Milisegundos
+Tiempo demorado para LinkedList:	 0,00933100 Milisegundos
+Test 13:
+Tiempo demorado para ArrayList:	 0,03452300 Milisegundos
+Tiempo demorado para LinkedList:	 0,08677500 Milisegundos
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+run:
+Test 1 - Ordenamos una lista ya ordenada con el algoritmo "bubble sort":
+Tiempo demorado:	 0,03452300 Milisegundos
+Test 2 - Ordenamos una lista aleatoria con el algoritmo "bubble sort":
+Tiempo demorado:	 0,06204900 Milisegundos
+Test 3 - Ordenamos una lista inversamente ordenada con el algoritmo "bubble sort":
+Tiempo demorado:	 0,09190700 Milisegundos
+Test 3 - Ordenamos una lista con todos los elementos iguales con el algoritmo "bubble sort":
+Tiempo demorado:	 0,02799200 Milisegundos
+Test 5 - Ordenamos una lista ya ordenada con el algoritmo "selection sort":
+Tiempo demorado:	 0,05271700 Milisegundos
+Test 6 - Ordenamos una lista aleatoria con el algoritmo "selection sort":
+Tiempo demorado:	 0,06251500 Milisegundos
+Test 7 - Ordenamos una lista inversamente ordenada con el algoritmo "selection sort":
+Tiempo demorado:	 0,02146000 Milisegundos
+Test 8 - Ordenamos una lista con todos los elementos iguales con el algoritmo "selection sort":
+Tiempo demorado:	 0,01492900 Milisegundos
+Test 9 - Ordenamos una lista ya ordenada con el algoritmo "insertion sort":
+Tiempo demorado:	 0,00233300 Milisegundos
+Test 10 - Ordenamos una lista aleatoria con el algoritmo "insertion sort":
+Tiempo demorado:	 0,01026400 Milisegundos
+Test 11 - Ordenamos una lista inversamente ordenada con el algoritmo "insertion sort":
+Tiempo demorado:	 0,02472600 Milisegundos
+Test 12 - Ordenamos una lista con todos los elementos iguales con el algoritmo "insertion sort":
+Tiempo demorado:	 0,00233300 Milisegundos
+Test 13 - Ordenamos una lista ya ordenada con el algoritmo "quick sort":
+Tiempo demorado:	 0,01912800 Milisegundos
+Test 14 - Ordenamos una lista aleatoria con el algoritmo "quick sort":
+Tiempo demorado:	 0,00699800 Milisegundos
+Test 15 - Ordenamos una lista inversamente ordenada con el algoritmo "quick sort":
+Tiempo demorado:	 0,00699800 Milisegundos
+Test 16 - Ordenamos una lista con todos los elementos iguales con el algoritmo "quick sort":
+Tiempo demorado:	 0,00653100 Milisegundos
+Test 17 Ordenamos una lista ya ordenada con el algoritmo "merge sort":
+Tiempo demorado:	 0,04385400 Milisegundos
+Test 18 - Ordenamos una lista aleatoria con el algoritmo "merge sort":
+Tiempo demorado:	 0,02939100 Milisegundos
+Test 19 - Ordenamos una lista inversamente ordenada con el algoritmo "merge sort":
+Tiempo demorado:	 0,03405700 Milisegundos
+Test 20 - Ordenamos una lista con todos los elementos iguales con el algoritmo "merge sort":
+Tiempo demorado:	 0,03032400 Milisegundos
+Test 21 - Buscar un elemento de forma binaria en una lista ya ordenada:
+Tiempo demorado:	 0,00186700 Milisegundos
+Test 22 - Buscar un elemento de forma binaria en una lista aleatoria:
+Tiempo demorado:	 0,00140000 Milisegundos
+Test 22 - Buscar un elemento de forma binaria en una lista inversamente ordenada:
+Tiempo demorado:	 0,00140000 Milisegundos
+Test 22 - Buscar un elemento de forma binaria en una lista con todos los elementos iguales:
+Tiempo demorado:	 0,00279900 Milisegundos
+Test 25 - Buscar un elemento de forma secuencial en una lista ya ordenada:
+Tiempo demorado:	 0,01213000 Milisegundos
+Test 26 - Buscar un elemento de forma secuencial en una lista aleatoria:
+Tiempo demorado:	 0,00279900 Milisegundos
+Test 27 - Buscar un elemento de forma secuencial en una lista inversamente ordenada:
+Tiempo demorado:	 0,00233200 Milisegundos
+Test 28 - Buscar un elemento de forma secuencial en una lista con todos los elementos iguales:
+Tiempo demorado:	 0,00233300 Milisegundos
+Test 29 - Comprobamos que el algoritmo "bubble sort" funciona con una lista ya ordenada:
+	Antes de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+	Después de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+Test 30 - Comprobamos que el algoritmo "bubble sort" funciona con una lista aleatoria:
+	Antes de ordenar:
+	182 211 28 418 445 155 345 202 119 37 
+	Después de ordenar:
+	28 37 119 155 182 202 211 345 418 445 
+Test 31 - Comprobamos que el algoritmo "bubble sort" funciona con una lista inversamente ordenada:
+	Antes de ordenar:
+	9 8 7 6 5 4 3 2 1 0 
+	Después de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+Test 32 - Comprobamos que el algoritmo "bubble sort" funciona con una lista de alementos iguales
+	Antes de ordenar:
+	2 2 2 2 2 2 2 2 2 2 
+	Después de ordenar:
+	2 2 2 2 2 2 2 2 2 2 
+Test 33 - Comprobamos que el algoritmo "selection sort" funciona con una lista ya ordenada
+	Antes de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+	Después de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+Test 34 - Comprobamos que el algoritmo "selection sort" funciona con una lista aleatoria:
+	Antes de ordenar:
+	233 128 285 305 69 148 215 498 91 401 
+	Después de ordenar:
+	128 148 69 233 285 305 215 401 91 498 
+Test 34 - Comprobamos que el algoritmo "selection sort" funciona con una lista aleatoria:
+	Antes de ordenar:
+	9 8 7 6 5 4 3 2 1 0 
+	Después de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+Test 36 - Comprobamos que el algoritmo "selection sort" funciona con una lista con elementos iguales
+	Antes de ordenar:
+	2 2 2 2 2 2 2 2 2 2 
+	Después de ordenar:
+	2 2 2 2 2 2 2 2 2 2 
+Test 37 - Comprobamos que el algoritmo "insertion sort" funciona con una lista ya ordenada
+	Antes de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+	Después de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+Test 38 - Comprobamos que el algoritmo "insertion sort" funciona con una lista aleatoria:
+	Antes de ordenar:
+	324 439 132 248 151 195 304 343 310 382 
+	Después de ordenar:
+	132 151 195 248 304 310 324 343 382 439 
+Test 39 - Comprobamos que el agoritmo "insertion sort" funciona con una lista inversamente ordenada:
+	Antes de ordenar:
+	9 8 7 6 5 4 3 2 1 0 
+	Después de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+Test 40 - Comprobamos que el algoritmo "insertion sort" funciona con una lista con elementos iguales:
+	Antes de ordenar:
+	2 2 2 2 2 2 2 2 2 2 
+	Después de ordenar:
+	2 2 2 2 2 2 2 2 2 2 
+Test 41 - Comprobamos que el algoritmo "quick sort" funciona con una lista ya ordenada:
+	Antes de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+	Después de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+Test 42 - Comprobamos que el algoritmo "quick sort" funciona con una lista aleatoria:
+	Antes de ordenar:
+	447 151 213 456 98 18 195 84 231 481 
+	Después de ordenar:
+	7 4 5 8 151 6 213 447 456 481 
+Test 43 - Comprobamos que el algoritmo "quick sort" funciona con una lista inversamente ordenada:
+	Antes de ordenar:
+	9 8 7 6 5 4 3 2 1 0 
+	Después de ordenar:
+	1 5 4 6 7 7 8 8 9 9 
+Test 44 - Comprobamos que el algoritmo "quick sort" funciona con una lista con elementos iguales:
+	Antes de ordenar:
+	2 2 2 2 2 2 2 2 2 2 
+	Después de ordenar:
+	1 2 3 4 5 6 7 8 9 2 
+Test 45 - Comprobamos que el algoritmo "merge sort" funcionia con una lista ya ordenada:
+	Antes de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+	Después de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+Test 46 - Comprobamos que el algoritmo "merge sort" funciona con una lista aleatoria:
+	Antes de ordenar:
+	138 55 375 133 221 157 274 279 427 321 
+	Después de ordenar:
+	55 133 138 157 221 274 279 321 375 427 
+Test 47 - Comprobamos que el algoritmo "merge sort" funciona con una lista inversamete ordenada:
+	Antes de ordenar:
+	9 8 7 6 5 4 3 2 1 0 
+	Después de ordenar:
+	0 1 2 3 4 5 6 7 8 9 
+Test 48 - Comprobamos que el algoritmo "merge sort" funciona con una lista con los elementos iguales:
+	Antes de ordenar:
+	2 2 2 2 2 2 2 2 2 2 
+	Después de ordenar:
+	2 2 2 2 2 2 2 2 2 2 
+Test 49 - Comprobamos que busca de forma binaria el elemento en una lista ordenada:
+	Mostramos el array:
+	0 1 2 3 4 5 6 7 8 9 
+	Elemeto 5 encontrado
+Test 50 - Comprobamos que busca de forma binaria el elemento en una lista aleatoria:
+	Mostramos el array:
+	220 202 162 52 326 272 486 155 95 188 
+	Elemeto 5 no encontrado
+Test 51 - Comprobamos que busca de forma binaria el elemento en una lista inversamente ordenada:
+	Mostramos el array:
+	9 8 7 6 5 4 3 2 1 0 
+	Elemeto 5 encontrado
+Test 52 - Buscar un elemento de forma binaria en una lista con todos los elementos iguales:
+	Mostramos el array:
+	2 2 2 2 2 2 2 2 2 2 
+	Elemeto 2 encontrado
+Test 53 - Comprobamos que busca de forma secuencial el elemento en una lista ya ordenada:
+	Mostramos el array:
+	0 1 2 3 4 5 6 7 8 9 
+	Elemeto 5 encontrado
+Test 54 - Comprobamos que busca de forma secuencial el elemento en una lista aleatoria:
+	Mostramos el array:
+	469 166 15 199 392 245 203 352 331 126 
+	Elemeto 5 no encontrado
+Test 55 - Comprobamos que busca de forma secuencial el elemento en una lista inversamente ordenada:
+	Mostramos el array:
+	9 8 7 6 5 4 3 2 1 0 
+	Elemeto 5 encontrado
+Test 5 - Comprobamos que busca de forma secuencial el elemento en una lista con los elementos iguales:
+	Mostramos el array:
+	2 2 2 2 2 2 2 2 2 2 
+	Elemeto 5 no encontrado
+BUILD SUCCESSFUL (total time: 0 seconds)
