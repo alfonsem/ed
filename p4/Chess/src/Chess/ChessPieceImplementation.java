@@ -5,85 +5,56 @@ package Chess;
  * @author Alfonso Esteve
  */
 public class ChessPieceImplementation implements ChessPiece{
+
     Color color;
     Type type;
-    ChessPiece piece;
-    ChessBoard aBoard; 
-    PiecePosition[] positions;
-
-    /**
-     * 
-     * @param color
-     * @param type 
-     */
-    ChessPieceImplementation(Color color, Type type) {
-        this.color = color;
-        this.type = type;
+    boolean moved;
+    
+    public ChessPieceImplementation(){
     }
-
-    /**
-     * 
-     * @return 
-     */
+    
+    public ChessPieceImplementation(ChessPiece.Color aColor, ChessPiece.Type aType){
+        color = aColor;
+        type = aType;
+    }
+    
     @Override
-    public Color getColor() {
+    public ChessPiece.Color getColor() {
         return color;
     }
 
-    /**
-     * 
-     * @return 
-     */
     @Override
-    public Type getType() {
+    public ChessPiece.Type getType() {
         return type;
     }
 
-    /**
-     * 
-     */
     @Override
     public void notifyMoved() {
-        
+        moved = true;
     }
 
-    /**
-     * 
-     * @return 
-     */
     @Override
     public boolean wasMoved() {
-        return true;
+        return moved;
     }
 
-    /**
-     * 
-     * @param aBoard
-     * @return 
-     */
     @Override
     public PiecePosition[] getAvailablePositions(ChessBoard aBoard) {
-        switch (piece.getType()){
-            case KING:
-                positions = ChessMovementManager.getAvailablePositionsOfKing(piece, aBoard);
-                break;
-            case QUEEN:
-                positions = ChessMovementManager.getAvailablePositionsOfQueen(piece, aBoard);
-                break;
-            case ROOK:
-                positions = ChessMovementManager.getAvailablePositionsOfRook(piece, aBoard);
-                break;
-            case BISHOP:
-                positions = ChessMovementManager.getAvailablePositionsOfBishop(piece, aBoard);
-                break;
-            case KNIGHT:
-                positions = ChessMovementManager.getAvailablePositionsOfKnight(piece, aBoard);
-                break;
+        switch(getType()){
             case PAWN:
-                positions = ChessMovementManager.getAvailablePositionsOfPawn(piece, aBoard);
-                break;
+                return ChessMovementManager.getAvailablePositionsOfPawn(this,aBoard); 
+            case BISHOP:
+                return ChessMovementManager.getAvailablePositionsOfBishop(this,aBoard);
+            case KING:
+                return ChessMovementManager.getAvailablePositionsOfKing(this, aBoard);
+            case QUEEN:
+                return ChessMovementManager.getAvailablePositionsOfQueen(this,aBoard);
+            case KNIGHT:
+                return ChessMovementManager.getAvailablePositionsOfKnight(this,aBoard);
+            case ROOK:
+                return ChessMovementManager.getAvailablePositionsOfRook(this,aBoard);
         }
-        return positions;
+        return null;
     }
     
 }

@@ -1,7 +1,14 @@
 package Chess;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * 
@@ -97,6 +104,10 @@ public class ChessBoardImplementation implements ChessBoard {
 			int oldIndex = getPieceIndex(oldPosition);
 			int newIndex = getPieceIndex(Position);
 			pieces[oldIndex] = null;
+                        
+                        //Si el peón llega al final del tablero lo convertimos en Dama
+			if(Piece.getType() == ChessPiece.Type.PAWN && (Position.getRow() == 0 || Position.getRow() == 7))
+                            Piece = new ChessPieceImplementation(Piece.getColor(),ChessPiece.Type.QUEEN);
 			pieces[newIndex] = Piece;
 			Piece.notifyMoved();
 			return true;
@@ -114,12 +125,98 @@ public class ChessBoardImplementation implements ChessBoard {
 
 	@Override
 	public boolean saveToFile(File location) {
-		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            Charset charset = Charset.forName("US-ASCII");
+            try (BufferedWriter writer = Files.newBufferedWriter(location.toPath(), charset)) {
+                for (int f = 0; f < 8; f++) {
+                    for (int c = 0; c < 8; c++) {
+                        int index = getPieceIndex(c, f);
+                        ChessPiece p = pieces[index];
+                        if(p != null){
+                            String s = "";
+                            if(p.getColor() == ChessPiece.Color.WHITE)
+                                s = s + "W,";
+                            else
+                                s = s + "B,";
+                            
+                            switch(p.getType()){
+                                case PAWN:
+                                    s = s + "P,";
+                                    break;
+                                case BISHOP:
+                                    s = s + "B,";
+                                    break;
+                                case KING:
+                                    s = s + "K,";
+                                    break;
+                                case QUEEN:
+                                    s = s + "Q,";
+                                    break;
+                                case KNIGHT:
+                                    s = s + "KN,";
+                                    break;
+                                case ROOK:
+                                    s = s + "R,";
+                                    break;    
+                            }
+                            
+                            s = s + c + ",";
+                            s = s + f + "\r\n";
+                            
+                            writer.write(s, 0, s.length());
+                        }
+                    }
+                }
+                return true;
+            } 
+            catch (IOException x) {
+                    System.err.format("IOException: %s%n", x);
+            }
+            return false;
 	}
 
 	@Override
 	public boolean loadFromFile(File location) {
-		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            try {
+                Scanner sc = new Scanner(location);
+                for (int i = 0; i < 8 * 8; i++) {
+                    pieces[i] = null;
+                }
+                
+                while(sc.hasNext()){
+                    String s = sc.nextLine();
+                    String[] fields = s.split(",");
+                    
+                    ChessPiece.Color color;
+                    if(fields[0].equalsIgnoreCase("W"))
+                        color = ChessPiece.Color.WHITE;
+                    else
+                        color = ChessPiece.Color.BLACK;
+                    
+                    ChessPiece.Type type;
+                    if(fields[1].equalsIgnoreCase("P"))
+                        type = ChessPiece.Type.PAWN;
+                    else if(fields[1].equalsIgnoreCase("B"))
+                        type = ChessPiece.Type.BISHOP;
+                    else if(fields[1].equalsIgnoreCase("K"))
+                        type = ChessPiece.Type.KING;
+                    else if(fields[1].equalsIgnoreCase("Q"))
+                        type = ChessPiece.Type.QUEEN;
+                    else if(fields[1].equalsIgnoreCase("KN"))
+                        type = ChessPiece.Type.KNIGHT;
+                    else
+                        type = ChessPiece.Type.ROOK;
+                    
+                    int c = Integer.parseInt(fields[2]);
+                    int r = Integer.parseInt(fields[3]);
+                    
+                    pieces[getPieceIndex(c, r)] = new ChessPieceImplementation(color, type);
+                }
+                return true;
+                
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(ChessBoardImplementation.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            return false;
 	}
 	
 }
