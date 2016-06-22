@@ -1,0 +1,67 @@
+run:
+Tiempo medio (en milisegundos) que tarda cada una de estas acciones en ejecutarse:
+                                                                                            ArrayList          LinkedList
+Test 1: Insertar un elemento al final de la lista:                                         0,02509053          0,20272296
+Test 2: Insertar un elemento al principio de la lista:                                     0,06426910          0,09539161
+Test 3: Insertar un elemento en medio de la lista:                                         0,08374735          0,69714857
+Test 4: Borrar un elemento al final de la lista:                                           0,05291885          0,21758608
+Test 5: Borrar un elemento al principio de la lista:                                       0,17146421          0,20863239
+Test 6: Borrar un elemento en medio de la lista:                                           0,18211998          0,40816931
+Test 7: Borrar un elemento al final de la lista (por su valor):                            0,05070263          0,11364230
+Test 8: Borrar un elemento al principio de la lista (por su valor):                        0,04607048          0,17293042
+Test 9: Borrar un elemento en medio de la lista (por su valor):                            0,04372768          0,54985914
+Test 10: Vaciado completo de la lista:                                                     0,05418731          0,11866248
+Test 11: Buscar un elemento al final de la lista (de forma secuencial):                    3,15117241          24,20180302
+Test 12: Buscar un elemento al principio de la lista (de forma secuencial):                0,01167221          0,02373691
+Test 13: Buscar un elemento en el medio de la lista (de forma secuencial):                 0,13146915          9,64069178
+Test 14: Buscar si existe un elemento inexistente en la lista (de forma secuencial):       1,32695318          3,07811459
+Test 15: Buscar si existe un elemento al final de la lista (de forma binaria):             0,11159407          0,35169033
+Test 16: Buscar si existe un elemento al principio de la lista (de forma binaria):         0,07585362          0,29087849
+Test 17: Buscar si existe un elemento en el medio de la lista (de forma binaria):          0,04866407          0,87422952
+Test 18: Buscar si existe un elemento inexistente en la lista (de forma binaria):          0,03664183          0,25109223
+Tiempo que tarda cada una de estas acciones en realizarse:
+----------------------------------------------------------
+Test 1 - Ordenamos una lista aleatoria con el algoritmo "bubble sort":                               21,06299400 ms
+Test 2 - Ordenamos una lista creciente con el algoritmo "bubble sort":                               4,09475200 ms
+Test 3 - Ordenamos una lista decreciente con el algoritmo "bubble sort":                             8,96861500 ms
+Test 4 - Ordenamos una lista con todos los elementos iguales con el algoritmo "bubble sort":         2,48894900 ms
+Test 5 - Ordenamos una lista aleatoria con el algoritmo "selection sort":                            28,49531800 ms
+Test 6 - Ordenamos una lista creciente con el algoritmo "selection sort":                            20,32680600 ms
+Test 7 - Ordenamos una lista decreciente con el algoritmo "selection sort":                          7,95250700 ms
+Test 8 - Ordenamos una lista con todos los elementos iguales con el algoritmo "selection sort":      5,45189500 ms
+Test 9 - Ordenamos una lista aleatoria con el algoritmo "insertion sort":                            0,22440200 ms
+Test 10 - Ordenamos una lista creciente con el algoritmo "insertion sort":                           0,23466500 ms
+Test 11 - Ordenamos una lista decreciente con el algoritmo "insertion sort":                         0,24259700 ms
+Test 12 - Ordenamos una lista con todos los elementos iguales con el algoritmo "insertion sort":     0,16795200 ms
+Test 13 - Ordenamos una lista aleatoria con el algoritmo "quick sort":                               1,44251700 ms
+Test 14 - Ordenamos una lista creciente con el algoritmo "quick sort":                               0,58783100 ms
+Test 15 - Ordenamos una lista decreciente con el algoritmo "quick sort":                             0,72825600 ms
+Test 16 - Ordenamos una lista con todos los elementos iguales con el algoritmo "quick sort":         0,82296200 ms
+Test 17 - Ordenamos una lista aleatoria con el algoritmo "merge sort":                               3,19807800 ms
+Test 18 - Ordenamos una lista creciente con el algoritmo "merge sort":                               1,60487000 ms
+Test 19 - Ordenamos una lista decreciente con el algoritmo "mergee sort":                            1,54002300 ms
+Test 20 - Ordenamos una lista con todos los elementos iguales con el algoritmo "mergee sort":        2,94195200 ms
+
+Comprobamos que los algoritmos funcionan correctamente con los siguientes tests:
+--------------------------------------------------------------------------------
+Test 1 - Comprobamos si la ordenación de una lista aleatoria con el método "bubble sort" es correcta: OK
+Test 2 - Comprobamos si la ordenación de una lista creciente con el método "bubble sort" es correcta: OK
+Test 3 - Comprobamos si la ordenación de una lista decreciente con el método "bubble sort" es correcta: OK
+Test 4 - Comprobamos si la ordenación de una lista con todos los elementos iguales con el método "bubble sort" es correcta: OK
+Test 5 - Comprobamos si la ordenación de una lista aleatoria con el método "selection sort" es correcta: OK
+Test 6 - Comprobamos si la ordenación de una lista creciente con el método "selection sort" es correcta: OK
+Test 7 - Comprobamos si la ordenación de una lista decreciente con el método "selection sort" es correcta: OK
+Test 8 - Comprobamos si la ordenación de una lista con todos los elementos iguales con el método "selection sort" es correcta: OK
+Test 9 - Comprobamos si la ordenación de una lista aleatoria con el método "insertion sort" es correcta: OK
+Test 10 - Comprobamos si la ordenación de una lista creciente con el método "insertion sort" es correcta: OK
+Test 11 - Comprobamos si la ordenación de una lista decreciente con el método "insertion sort" es correcta: OK
+Test 4 - Comprobamos si la ordenación de una lista con todos los elementos iguales con el método "insertion sort" es correcta: OK
+Test 13 - Comprobamos si la ordenación de una lista aleatoria con el método "quick sort" es correcta: OK
+Test 14 - Comprobamos si la ordenación de una lista creciente con el método "quick sort" es correcta: OK
+Test 15 - Comprobamos si la ordenación de una lista decreciente con el método "quick sort" es correcta: OK
+Test 16 - Comprobamos si la ordenación de una lista con todos los elementos iguales con el método "quick sort" es correcta: OK
+Test 17 - Comprobamos si la ordenación de una lista aleatoria con el método "merge sort" es correcta: OK
+Test 18 - Comprobamos si la ordenación de una lista creciente con el método "merge sort" es correcta: OK
+Test 19 - Comprobamos si la ordenación de una lista decreciente con el método "merge sort" es correcta: OK
+Test 20 - Comprobamos si la ordenación de una lista con todos los elementos iguales con el método "merge sort" es correcta: OK
+BUILD SUCCESSFUL (total time: 0 seconds)
