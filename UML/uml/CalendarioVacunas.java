@@ -5,18 +5,24 @@
  */
 package veterinario;
 
+import java.util.Date;
+import java.util.ArrayList;
+
 /**
  *
  * @author Alfonso Esteve
  */
 public class CalendarioVacunas {
-    String fechaVacuna;
-    String enfermedadVacuna;
+    private ArrayList<Date> fechaVacunas = new ArrayList<Date>();
+    private ArrayList<Enfermedad> enfermedades = new ArrayList<Enfermedad>();
+    private Mascota mascota;
     
-    public void mostrarCalendario(){
-        
+    public void anyadirFechaVacunacion(Date fecha){
     }
-    public void anyadirVacuna(String fechaVacuna, String enfermedadVacuna){
-        
+    
+    public void anyadirEnfermedad(Enfermedad enfermedad){
+    }
+    public Mascota getMascota(){
+        return mascota;
     }
 }

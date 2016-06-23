@@ -5,18 +5,32 @@
  */
 package veterinario;
 
+import java.util.Date;
+
 /**
  *
  * @author Alfonso Esteve
  */
 public class HistorialMedico {
-    String enfermedad;
-    String fecha;
+    private Date fecha;
+    private Mascota mascota;
+    private Enfermedad enfermedad;
     
-    public void mostrarHistorial(){
-        
+    public HistorialMedico(){
     }
-    public void anyadirHistorial(String enfermedad, String fecha){
-        
+    
+    public HistorialMedico(Date fecha, Mascota mascota, Enfermedad enfermedad){
+    }
+    
+    public Date getFecha(){
+        return fecha;
+    }
+    
+    public Mascota getMascota(){
+        return mascota;
+    }
+    
+    public Enfermedad getEnfermedad(){
+        return enfermedad;
     }
 }
